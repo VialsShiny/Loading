@@ -21,7 +21,7 @@ Ce projet permet de récupérer une image de chat à l'aide de l'API **TheCatAPI
 
 1. Clonez ce repository sur votre machine locale :
     ```bash
-    git clone https://github.com/votre-utilisateur/cat-image-loader.git
+    git clone https://github.com/votre-utilisateur/cat-image-loader.git](https://github.com/VialsShiny/Loading.git
     ```
 
 2. Ouvrez le fichier `index.html` dans votre navigateur pour voir le projet en action.
