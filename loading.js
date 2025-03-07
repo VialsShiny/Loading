@@ -22,7 +22,7 @@ xhr.onload = function () {
     document.getElementById('imageContainer').innerHTML = `<img src="${response[0].url}" alt="Cat Image" class="w-96 h-96 object-cover object-center rounded-[2vw]">`;
     cutLoadingPage();
   } else {
-    document.getElementById('imageContainer').innerHTML = "Erreur lors de la récupération des données.";
+    document.querySelector('p.alert').textContent = "Erreur lors de la récupération des données.";
   }
 };
 

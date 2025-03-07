@@ -7,10 +7,10 @@
   <title>Loading Page Done</title>
   <style>
     .loading-screen {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       background-color: #000;
       /* Optionnel, pour un fond sombre */
     }
@@ -25,6 +25,14 @@
       border-radius: 50%;
       margin: 0 5px;
       animation: jump 0.6s ease-in-out infinite;
+    }
+
+    .loading-screen p.alert {
+      position: absolute;
+      bottom: 15px;
+      color: red;
+      font-weight: bold;
+      animation: jump 5s infinite; /* Optionnelle */
     }
 
     .loading-screen::before {
@@ -55,13 +63,17 @@
 </head>
 
 <body class="bg-gradient-to-r from-black to-purple-600">
-  <div class="loading-screen"><span></span></div>
   <div class="content h-screen flex flex-col items-center justify-center">
     <h1 class="text-white text-4xl font-bold mb-8">
       Loading Page Done
     </h1>
 
-    <div id="imageContainer"></div>
+    <div id="imageContainer">
+      <div class="loading-screen w-96 h-96 rounded-[2vw]">
+        <span></span>
+        <p class="alert"></p>
+      </div>
+    </div>
   </div>
 
   <script src="loading.js"></script>
