@@ -69,7 +69,7 @@
     </h1>
 
     <div id="imageContainer">
-      <div class="loading-screen w-96 h-96 rounded-[2vw]">
+      <div class="loading-screen w-96 h-96 rounded-[2vw] ring ring-indigo-400">
         <span></span>
         <p class="alert"></p>
       </div>
